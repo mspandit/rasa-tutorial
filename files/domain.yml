@@ -1,0 +1,68 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - when_announced
+  - what_announced
+  - ask_nnp_i_product_details
+  - more_product_details
+  - ask_nnp_t_product_details
+  - competitive_position
+  - future_roadmap
+
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_hot_chips
+- utter_hot_chips_announcement
+- utter_nnp_i_details
+- utter_more_nnp_i_details
+- utter_nnp_t_details
+- utter_more_nnp_t_details
+
+templates:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  # https://newsroom.intel.com/news/hot-chips-2019/
+  utter_hot_chips:
+  - text: "Intel made an important announcement at Hot Chips 2019 on August 20th."
+
+  utter_hot_chips_announcement:
+  - text: "Intel revealed new details of upcoming high-performance artificial intelligence (AI) accelerators: Intel(r) Nervana(tm) neural network processors, with the NNP-T for training and the NNP-I for inference."
+  
+  utter_nnp_t_details:
+  - text: "Intel Nervana NNP-T (Neural Network Processor) pushes the boundaries of deep learning training. It is built to prioritize two key real-world considerations: training a network as fast as possible and doing it within a given power budget."
+
+  utter_more_nnp_t_details:
+  - text: "This deep learning training processor is built with flexibility in mind, striking a balance among computing, communication and memory. While Intel® Xeon® Scalable processors bring AI-specific instructions and provide a great foundation for AI, the NNP-T is architected from scratch, building in features and requirements needed to solve for large models, without the overhead needed to support legacy technology."
+
+  utter_nnp_i_details:
+  - text: "Intel Nervana NNP-I is purpose-built specifically for inference and is designed to accelerate deep learning deployment at scale, introducing specialized leading-edge deep learning acceleration while leveraging Intel's 10nm process technology with Ice Lake cores to offer industry-leading performance per watt across all major datacenter workloads."
+
+  utter_more_nnp_i_details:
+  - text: "The Intel Nervana NNP-I offers a high degree of programmability without compromising performance or power efficiency. As AI becomes pervasive across every workload, having a dedicated inference accelerator that is easy to program, has short latencies, has fast code porting and includes support for all major deep learning frameworks allows companies to harness the full potential of their data as actionable insights."
