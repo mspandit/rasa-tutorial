@@ -13,14 +13,14 @@
 
 ## product_nnp_i
 > check_product
-* ask_nnp_i_product_details
+* ask_product_details{"nnpi":"nnp i"}
   - utter_nnp_i_details
 * more_product_details
   - utter_more_nnp_i_details
 
 ## product_nnp_t
 > check_product
-* ask_nnp_t_product_details
+* ask_product_details{"nnpt":"nnp t"}
   - utter_nnp_t_details
 * more_product_details
   - utter_more_nnp_t_details

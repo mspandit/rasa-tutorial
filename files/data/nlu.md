@@ -19,16 +19,15 @@
 - what was it
 - what
 
-## intent:ask_nnp_i_product_details
-- tell me more about nnp i
-- nnp i
-
-## intent:ask_nnp_t_product_details
-- tell me more about nnp t
-- nnp t
+## intent:ask_product_details
+- tell me more about [nnp i](nnpi)
+- [nnp i](nnpi)
+- tell me more about [nnp t](nnpt)
+- [nnp t](nnpt)
 
 ## intent:more_product_details
 - what else?
+- say more
 
 ## intent:goodbye
 - bye

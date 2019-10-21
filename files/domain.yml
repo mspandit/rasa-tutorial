@@ -8,9 +8,11 @@ intents:
   - bot_challenge
   - when_announced
   - what_announced
-  - ask_nnp_i_product_details
+  - ask_product_details:
+      use_entities:
+        - nnpi
+        - nnpt
   - more_product_details
-  - ask_nnp_t_product_details
   - competitive_position
   - future_roadmap
 
@@ -27,6 +29,10 @@ actions:
 - utter_more_nnp_i_details
 - utter_nnp_t_details
 - utter_more_nnp_t_details
+
+entities:
+  - nnpi
+  - nnpt
 
 templates:
   utter_greet:
