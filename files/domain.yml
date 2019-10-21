@@ -8,6 +8,8 @@ intents:
   - bot_challenge
   - when_announced
   - what_announced
+  - recommend_processor:
+      use_entities: []
   - ask_product_details:
       use_entities:
         - nnpi
@@ -15,6 +17,7 @@ intents:
   - more_product_details
   - competitive_position
   - future_roadmap
+  - thankyou
 
 actions:
 - utter_greet
@@ -29,10 +32,26 @@ actions:
 - utter_more_nnp_i_details
 - utter_nnp_t_details
 - utter_more_nnp_t_details
+- utter_slots_values
+- utter_noworries
 
 entities:
   - nnpi
   - nnpt
+  - use_conditions
+  - vertical_segment
+  - cores_minimum
+  
+slots:
+   use_conditions:
+      type: unfeaturized
+      auto_fill: false
+   vertical_segment:
+      type: unfeaturized
+      auto_fill: false
+   cores_minimum:
+      type: unfeaturized
+      auto_fill: false
 
 templates:
   utter_greet:
@@ -72,3 +91,36 @@ templates:
 
   utter_more_nnp_i_details:
   - text: "The Intel Nervana NNP-I offers a high degree of programmability without compromising performance or power efficiency. As AI becomes pervasive across every workload, having a dedicated inference accelerator that is easy to program, has short latencies, has fast code porting and includes support for all major deep learning frameworks allows companies to harness the full potential of their data as actionable insights."
+  
+  utter_ask_use_conditions:
+    - text: "In what conditions will you use the CPU? (Automotive, PC, Tablet, Server)"
+  
+  utter_wrong_use_conditions:
+    - text: "Please choose Automotive, PC, Tablet, or Server."
+
+  utter_ask_vertical_segment:
+    - text: "To which vertical segment is the CPU targeted? (Desktop, Embedded, Mobile, Server, Workstation)"
+
+  utter_wrong_vertical_segment:
+    - text: "Please choose Desktop, Embedded, Mobile, Server, or Workstation."
+
+  utter_ask_cores_minimum:
+    - text: "What is the minimum number of cores required? (1-120)"
+
+  utter_wrong_cores_minimum:
+    - text: "Please choose a number between 1 and 120."
+
+  utter_submit:
+    - text: "I've gathered the necessary information."
+
+  utter_slots_values:
+    - text: "I am going to run a processor search using the following parameters:\n
+             - use_conditions: {use_conditions}\n
+             - vertical_segment: {vertical_segment}\n
+             - cores_minimum: {cores_minimum}"
+
+  utter_noworries:
+    - text: "you are welcome :)"
+
+forms:
+   - processor_form

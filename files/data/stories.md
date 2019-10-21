@@ -3,6 +3,15 @@
   - utter_greet
 * mood_great
   - utter_happy
+ 
+## processor query
+* recommend_processor
+	- processor_form
+	- form{"name": "processor_form"}
+	- form{"name": null}
+	- utter_slots_values
+* thankyou
+   - utter_noworries
 
 ## product_nnp
 * when_announced
