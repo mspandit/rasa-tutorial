@@ -4,21 +4,22 @@
 * mood_great
   - utter_happy
 
-## product_nnp_i
+## product_nnp
 * when_announced
   - utter_hot_chips
 * what_announced
   - utter_hot_chips_announcement
+> check_product
+
+## product_nnp_i
+> check_product
 * ask_nnp_i_product_details
   - utter_nnp_i_details
 * more_product_details
   - utter_more_nnp_i_details
 
 ## product_nnp_t
-* when_announced
-  - utter_hot_chips
-* what_announced
-  - utter_hot_chips_announcement
+> check_product
 * ask_nnp_t_product_details
   - utter_nnp_t_details
 * more_product_details
