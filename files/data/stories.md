@@ -14,6 +14,16 @@
 * more_product_details
   - utter_more_nnp_i_details
 
+## product_nnp_t
+* when_announced
+  - utter_hot_chips
+* what_announced
+  - utter_hot_chips_announcement
+* ask_nnp_t_product_details
+  - utter_nnp_t_details
+* more_product_details
+  - utter_more_nnp_t_details
+
 ## sad path 1
 * greet
   - utter_greet

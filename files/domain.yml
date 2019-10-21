@@ -59,7 +59,7 @@ templates:
   - text: "Intel Nervana NNP-T (Neural Network Processor) pushes the boundaries of deep learning training. It is built to prioritize two key real-world considerations: training a network as fast as possible and doing it within a given power budget."
 
   utter_more_nnp_t_details:
-  - text: "This deep learning training processor is built with flexibility in mind, striking a balance among computing, communication and memory. While Intel® Xeon® Scalable processors bring AI-specific instructions and provide a great foundation for AI, the NNP-T is architected from scratch, building in features and requirements needed to solve for large models, without the overhead needed to support legacy technology."
+  - text: "This deep learning training processor is built with flexibility in mind, striking a balance among computing, communication and memory. While Intel(R) Xeon(R) Scalable processors bring AI-specific instructions and provide a great foundation for AI, the NNP-T is architected from scratch, building in features and requirements needed to solve for large models, without the overhead needed to support legacy technology."
 
   utter_nnp_i_details:
   - text: "Intel Nervana NNP-I is purpose-built specifically for inference and is designed to accelerate deep learning deployment at scale, introducing specialized leading-edge deep learning acceleration while leveraging Intel's 10nm process technology with Ice Lake cores to offer industry-leading performance per watt across all major datacenter workloads."
